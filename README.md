@@ -151,7 +151,20 @@ end
 endmodule
 
 ```
+#### PROGRAM FOR T FLIPFLOP
+```
 
+module exp_5c(clk,T,q,qbar);
+input clk,T;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin
+q=(T&~q)|(~T&q);
+qbar=~q;
+end 
+endmodule
+```
 
 
 
@@ -165,6 +178,8 @@ endmodule
 ##### RTL LOGIC FOR JK FLIPFLOP
 ![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/bc45c5f9-6465-4363-9d21-31bd911ca6e7)
 
+##### RTL LOGIC FOR T FLIPFLOP
+![Screenshot 2023-10-06 095436](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/76978f85-bfd2-44fa-9481-6285138effb2)
 
 
 
@@ -179,7 +194,8 @@ endmodule
 #### TIMING DIGRAMS FOR JK FLIFLOP
 ![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/b9b6ced7-bd8a-4b12-8ce1-cb2d33ce6499)
 
-
+#### TIMING DIGRAMS FOR JK FLIFLOP
+![Screenshot 2023-10-06 095706](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/5f88880c-bee8-4edc-a9cd-3c838b2553af)
 
 
 
