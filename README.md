@@ -136,7 +136,7 @@ qbar=r|(qbar&(~s));
 end
 endmodule
 ```
-#### PROGRAM FOR JK FLIPFLOP
+#### PROGRAM FOR D FLIPFLOP
 ```
 module d(d,clk,q,qbar);
 input d,clk;
